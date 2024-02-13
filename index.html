@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contribute notes</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contributenotes.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
         // $('#school').click(function(){$("#class").toggle(this.click);});
@@ -84,8 +84,17 @@
                         <option value="12">semester 12</option>
                     </select><br>
                 </div>
-                <label for="file">drop the notes here</label>
-                <input type="file" id="file" accept=".pdf,.doc,.jpg,.png,.docx,image/* " capture><br>
+                <label for="file">drop the notes here</label><br>
+                <input type="radio" name="filechoose">
+                <label>UPLOAD</label>
+                <input type="radio" name="filechoose">
+                <label>UPLOAD</label>
+                <div class="upload">
+                    <input type="file" id="file" accept=".pdf,.doc,.jpg,.png,.docx" ><br>
+                </div>
+                <div class="upload">
+                    <input type="file" accept="image/*" capture="enviornment"></input>
+                </div>
                 <label for="description">description</label><br>
                 <textarea rows=10 coloums=20 id="description">Enter the discription here</textarea>
             </fieldset>
